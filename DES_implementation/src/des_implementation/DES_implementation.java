@@ -39,9 +39,9 @@ public class DES_implementation {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);  // Reading from System.in
-        System.out.println("Enter a key in hexadecimal, without spaces: ");
+        System.out.println("Enter a 16 bit key in hexadecimal, without spaces (make sure they are 16 digits): ");
         String hexaStringKEY = reader.next();
-        System.out.println("Enter a message in hexadecimal, without spaces: ");
+        System.out.println("Enter a 16 bit message in hexadecimal, without spaces (make sure they are 16 digits): ");
         String hexaStringMessage = reader.next();
         System.out.println("Enter number of rounds in decimal, without spaces: ");
         int rounds = reader.nextInt();
@@ -61,7 +61,7 @@ public class DES_implementation {
             Bin_cypher = hexToBinary(Hex_cypher);
             e1.message=Bin_cypher;
         }
-        System.out.println(Hex_cypher);
+        System.out.println("The cypher text is "+Hex_cypher);
     }
 
     public static String hexToBinary(String hex) {
