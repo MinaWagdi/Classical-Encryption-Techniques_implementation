@@ -290,9 +290,6 @@ public class Encryptor {
         return s.substring(shift_count) + s.substring(0, shift_count);
     }
 
-    
-    
-
     public String XOR_BinaryStrings(String a, String b) {
         String result = "";
         if (a.length() != b.length()) {
