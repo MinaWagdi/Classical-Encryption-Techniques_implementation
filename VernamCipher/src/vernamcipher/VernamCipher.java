@@ -61,7 +61,7 @@ public class VernamCipher {
     
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);  // Reading from System.in
-        System.out.println("Enter the message");
+        System.out.println("Enter the message : ");
         message = reader.next();
         System.out.println("Enter the key :");
         key = reader.next();
